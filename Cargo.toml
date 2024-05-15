@@ -1,0 +1,13 @@
+[package]
+name = "ecdsa_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+powdr-riscv-runtime = { path = "/home/pacheco/powderlabs/powdr/riscv-runtime" }
+hex-literal = "0.4.1"
+# k256 = { version = "0.13.3", default-features = false, features = ["ecdsa", "sha256"] }
+k256 = { path = "/home/pacheco/powderlabs/crypto-elliptic-curves/k256", default-features = false, features = ["ecdsa", "sha256"] }
+
+[patch.crates-io]
+# crypto-bigint = { path = "/home/pacheco/powderlabs/crypto-bigint" }
